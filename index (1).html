@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jennielyn Gamgam— Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Jennielyn Gamgam</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <h2>A WEB DEVELOPER</h2>
+      <p class="cta-row">
+        <a class="btn" href="about.html">Learn more</a>
+        <a class="btn ghost" href="jennielyngamgam730@gmail.com.com">Contact</a>
+      </p>
+    </section>
+
+    <section class="showcase">
+      <article class="card">
+        <h3>Recent Project</h3>
+        <p>I recently developed a responsive web application with modern features.</p>
+      </article>
+      <article class="card">
+        <h3>Open Source</h3>
+        <p>I enjoy contributing to open-source projects on GitHub.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Jennielyn Gamgam— Built with ❤️</small>
+      <div class="social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const links = document.querySelectorAll('.nav a');
+    links.forEach(a => {
+      if (a.getAttribute('href') === window.location.pathname.split('/').pop() || 
+         (a.getAttribute('href') === 'index.html' && window.location.pathname.endsWith('/')) ) {
+        a.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — Jennielyn Gamgam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Jennielyn Gamgam</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="content">
+      <h2>Skills</h2>
+
+      <div class="skill-grid">
+        <div class="skill">
+          <h4>Front-End</h4>
+          <p>I create responsive interfaces using HTML, CSS, JavaScript, and React.</p>
+        </div>
+        <div class="skill">
+          <h4>Back-End</h4>
+          <p>I build scalable APIs with Node.js and Express.</p>
+        </div>
+        <div class="skill">
+          <h4>Data</h4>
+          <p>work with SQL and NoSQL databases like MySQL and MongoDB.</p>
+        </div>
+        <div class="skill">
+          <h4>Tools</h4>
+          <p>I use GitHub, Postman, CI/CD, and cloud services.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small>© <span id="year3"></span> Jennielyn Gamgam</small></div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
